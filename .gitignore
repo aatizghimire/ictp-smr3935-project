@@ -1,1 +1,3 @@
 a.out
+src\sequential_nn\*.o
+.vscode
