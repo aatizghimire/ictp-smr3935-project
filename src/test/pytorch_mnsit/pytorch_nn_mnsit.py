@@ -28,8 +28,8 @@ class NeuralNetwork(nn.Module):
 
 # Load MNIST dataset
 transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
-train_dataset = datasets.MNIST(root='.', train=True, download=False, transform=transform)
-test_dataset = datasets.MNIST(root='.', train=False, download=False, transform=transform)
+train_dataset = datasets.MNIST(root='./MSINT/', train=True, download=True, transform=transform)
+test_dataset = datasets.MNIST(root='./MSINT', train=False, download=True, transform=transform)
 
 train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False)
