@@ -14,7 +14,7 @@
 #define HIDDEN_SIZE 128
 #define OUTPUT_SIZE 10
 #define LEARNING_RATE 0.1
-#define EPOCHS 100
+#define EPOCHS 10
 
 
 // Sigmoid activation function

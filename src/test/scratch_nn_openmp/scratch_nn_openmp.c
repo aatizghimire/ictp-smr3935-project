@@ -17,6 +17,7 @@
 #define LEARNING_RATE 0.1
 #define EPOCHS 10
 
+#define NUM_THREADS 4
 
 // Sigmoid activation function
 double sigmoid(double x) {
@@ -239,7 +240,7 @@ int main() {
 
     double total_loss = 0.0;
 
-    #pragma omp parallel for default(shared) schedule(static) reduction(+:total_loss)
+    #pragma omp parallel for default(shared) schedule(static) num_threads(NUM_THREADS) reduction(+:total_loss)
     for (int epoch = 0; epoch < num_epochs; epoch++) {
         double total_loss = 0.0;
     // Iterate over training data

@@ -1,6 +1,13 @@
-# Neural Network From Scratch (with MNSIT)
+# Neural Network From Scratch with C Programming
+This repo is a project work of School of Parallel Programming and Parallel Architecture for High Performance Computing organzied by (ICTP)[https://ictp.it] and (Tribhuvan University)[https://tu.edu.np].
 
+<br>
 
+The Project Work is implementation of Neural Network from scratch in C Programming and parallelize in OpenMP and CUDA (GPU Programming).
+
+<br>
+
+### Directory Structure
 
 
 
